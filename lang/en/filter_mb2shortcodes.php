@@ -28,4 +28,4 @@ $string['globalopts'] = 'Global options';
 $string['globalopts_help'] = 'This field allow to set global options for shortcodes items. Each line consists separated by colon
 characters (:) shortcode_name:option_name:value. Fo example:<br><pre>accordion:accordion_active:0</pre>';
 $string['pagetheme'] = 'Deprecated';
-$string['privacy:metadata'] = 'The Mb2 Shortcodes plugin does not store any personal data.';
+$string['privacy:metadata'] = 'The Mb2 Shortcodes plugin does not store any personal data';
