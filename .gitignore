@@ -1,0 +1,37 @@
+# IDE / OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Composer dependencies
+vendor/
+composer.lock
+
+# Node / frontend tools (if used)
+node_modules/
+npm-debug.log
+yarn.lock
+
+# Moodle local caches
+cache/
+localcache/
+temp/
+sessions/
+
+# PHPUnit / Behat
+phpunit.xml
+behat.yml
+phpunit/
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+*.swp
+
+# PHPCS cache
+.phpcs-cache
+
+# Moodle generated data
+moodledata/
