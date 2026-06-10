@@ -26,7 +26,12 @@ namespace filter_mb2shortcodes;
 
 defined('MOODLE_INTERNAL') || die();
 
-require_once($CFG->dirroot . '/theme/mb2nl/lib/lib_shortcodes_bootstrap.php');
+$shfile = $CFG->dirroot . '/theme/mb2nl/lib/lib_shortcodes_bootstra.php';
+
+if (file_exists($shfile)) {
+    require_once($shfile);
+}
+
 
 /**
  * Filter class
@@ -40,7 +45,7 @@ class text_filter extends \core_filters\text_filter {
         global $PAGE;
 
         // Fast bailout.
-        if (strpos($text, '[') === false) {
+        if (!function_exists('theme_mb2nl_do_shortcode') || strpos($text, '[') === false) {
             return $text;
         }
 
@@ -73,5 +78,6 @@ class text_filter extends \core_filters\text_filter {
         }
 
         return theme_mb2nl_do_shortcode(strtr($text, $replacements));
+
     }
 }
