@@ -78,6 +78,5 @@ class text_filter extends \core_filters\text_filter {
         }
 
         return theme_mb2nl_do_shortcode(strtr($text, $replacements));
-
     }
 }
