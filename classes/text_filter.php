@@ -26,7 +26,7 @@ namespace filter_mb2shortcodes;
 
 defined('MOODLE_INTERNAL') || die();
 
-$shfile = $CFG->dirroot . '/theme/mb2nl/lib/lib_shortcodes_bootstra.php';
+$shfile = $CFG->dirroot . '/theme/mb2nl/lib/lib_shortcodes_bootstrap.php';
 
 if (file_exists($shfile)) {
     require_once($shfile);
